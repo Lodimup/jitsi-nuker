@@ -25,5 +25,8 @@ cd ~/jitsi-nuker/scripts
 bash join.sh
 ```
 
+# note
+does not require fake-stream anymore.  
+edit stream.sh, and change ~/Fake-Stream/test.mp4 to any mp4
 ## srcs
 https://www.linuxfordevices.com/tutorials/linux/fake-webcam-streams
