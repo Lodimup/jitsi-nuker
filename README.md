@@ -1,15 +1,29 @@
 # jitsi-nuker
 Spawns multiple chrome instances to <del>nuke</del> load test jitsi
 # Usage
-Requires python 3.9  
-Edit .env
+Requires python 3.10 
+
+download /scripts to your server
 ```
-# rename .env.sample to .env, then edit configs
+sudo bash install.sh  # install dependencies, and add kernel moduel
+sudo clone.sh  # clone repositories to your home dir
+```
+rename .env.sample to .env, then edit configs in ~/jitsi-nuker
+```
+cd ~/jitsi-nuker
 mv .env.sample .env
+vim .env
 ```
+create fake webcam stream
 ```
-pip install pipenv
-pipenv install
-cd src
-pipenv run python main.py
+cd ~/jitsi-nuker/scripts
+bash stream.sh
 ```
+<del>nuke</del> load test jitsi
+```
+cd ~/jitsi-nuker/scripts
+bash join.sh
+```
+
+## srcs
+https://www.linuxfordevices.com/tutorials/linux/fake-webcam-streams
